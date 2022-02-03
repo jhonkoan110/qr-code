@@ -1,22 +1,55 @@
 .container {
   background-color: #fff;
-  width: 500px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(204, 197, 197);
+  text-align: center;
+  width: 322px;
 }
 
 .QRCodeBackground {
   background-color: #2b7dfa;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
 .QRCodeCircle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
   background-color: #3684fe;
+  z-index: 0;
+  border-radius: 50%;
 }
 
-.QRCodeCircle:nth-child(1) {
-  width: 90px;
-  height: 90px;
+.QRCode {
+  z-index: 1;
 }
 
 .QRCodeCircle:nth-child(2) {
-  width: 60px;
-  height: 60px;
+  width: 250px;
+  height: 250px;
+  left: -25%;
+  top: -30%;
+}
+
+.QRCodeCircle:nth-child(3) {
+  bottom: -55%;
+  right: -40%;
+}
+
+.title {
+  margin: 20px 22px 0;
+  font-size: 20px;
+}
+
+.description {
+  margin: 20px 22px;
+  font-size: 14px;
+  color: gray;
 }
