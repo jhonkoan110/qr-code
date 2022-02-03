@@ -1,0 +1,22 @@
+.container {
+  background-color: #fff;
+  width: 500px;
+}
+
+.QRCodeBackground {
+  background-color: #2b7dfa;
+}
+
+.QRCodeCircle {
+  background-color: #3684fe;
+}
+
+.QRCodeCircle:nth-child(1) {
+  width: 90px;
+  height: 90px;
+}
+
+.QRCodeCircle:nth-child(2) {
+  width: 60px;
+  height: 60px;
+}
